@@ -1,0 +1,11 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: spring-monitoring-alert
+
+  data:
+    mongodb:
+      uri: mongodb+srv://tudor_patrutiu:${password}@${host}/test
+      database: spring-monitoring-alert

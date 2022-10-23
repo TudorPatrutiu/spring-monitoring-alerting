@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    vault:
+      enabled: true
+      host: localhost
+      port: 8200
+      scheme: http
+      uri: http://localhost:8200
+      connection-timeout: 5000
+      read-timeout: 15000
+      authentication: TOKEN
+      token: ${VAULT_TOKEN}
+      kv:
+        enabled: true
+        backend: secret
+        profile-separator: '/'
+        default-context: mongo
+
+
